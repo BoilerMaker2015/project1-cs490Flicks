@@ -2,7 +2,7 @@
 //  FlicksTests.swift
 //  FlicksTests
 //
-//  Created by Mac User on 16/1/18.
+//  Created by wentai,cui on 16/1/18.
 //  Copyright © 2016年 wentai. All rights reserved.
 //
 
