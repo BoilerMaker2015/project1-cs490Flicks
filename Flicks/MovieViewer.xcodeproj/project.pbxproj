@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1A085CC6A971D5E195D36572 /* Pods_MovieViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD69E6AC1392D7BF5A84D3C /* Pods_MovieViewer.framework */; };
 		6340D23C1C5410EC004F91CB /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6340D23B1C5410EC004F91CB /* Media.xcassets */; };
+		6340D2421C543B21004F91CB /* MoviesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6340D2411C543B21004F91CB /* MoviesCollectionViewController.swift */; };
+		6340D2441C544B88004F91CB /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6340D2431C544B88004F91CB /* MovieCollectionViewCell.swift */; };
+		6340D2461C557C62004F91CB /* MovieDisplayTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6340D2451C557C62004F91CB /* MovieDisplayTableController.swift */; };
 		847B4B6A1C433DBC001D83AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B4B691C433DBC001D83AE /* AppDelegate.swift */; };
 		847B4B6F1C433DBC001D83AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847B4B6D1C433DBC001D83AE /* Main.storyboard */; };
 		847B4B741C433DBC001D83AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847B4B721C433DBC001D83AE /* LaunchScreen.storyboard */; };
@@ -19,6 +22,9 @@
 /* Begin PBXFileReference section */
 		007AB0EA098746D195885AC6 /* Pods-MovieViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieViewer/Pods-MovieViewer.debug.xcconfig"; sourceTree = "<group>"; };
 		6340D23B1C5410EC004F91CB /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		6340D2411C543B21004F91CB /* MoviesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesCollectionViewController.swift; sourceTree = "<group>"; };
+		6340D2431C544B88004F91CB /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		6340D2451C557C62004F91CB /* MovieDisplayTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDisplayTableController.swift; sourceTree = "<group>"; };
 		847B4B661C433DBC001D83AE /* MovieViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847B4B691C433DBC001D83AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		847B4B6E1C433DBC001D83AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,6 +91,7 @@
 		847B4B7D1C435403001D83AE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6340D2431C544B88004F91CB /* MovieCollectionViewCell.swift */,
 				847B4B7E1C435435001D83AE /* MovieCell.swift */,
 			);
 			name = Views;
@@ -94,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				847B4B7B1C433E39001D83AE /* MoviesViewController.swift */,
+				6340D2411C543B21004F91CB /* MoviesCollectionViewController.swift */,
+				6340D2451C557C62004F91CB /* MovieDisplayTableController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -230,7 +239,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				847B4B6A1C433DBC001D83AE /* AppDelegate.swift in Sources */,
+				6340D2421C543B21004F91CB /* MoviesCollectionViewController.swift in Sources */,
+				6340D2441C544B88004F91CB /* MovieCollectionViewCell.swift in Sources */,
 				847B4B7C1C433E39001D83AE /* MoviesViewController.swift in Sources */,
+				6340D2461C557C62004F91CB /* MovieDisplayTableController.swift in Sources */,
 				847B4B7F1C435435001D83AE /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

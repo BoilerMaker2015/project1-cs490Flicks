@@ -11,9 +11,14 @@ import AFNetworking
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var NetReeor: UIView!
     var movies: [NSDictionary]?
-    
+    var overview: String?
+    var posterPath: String?
+    var YEAR: String?
+    var TIME: String?
+    var VOTE: Int?
+    var RATE: Double?
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,10 +43,16 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                     if let responseDictionary = try! NSJSONSerialization.JSONObjectWithData(
                         data, options:[]) as? NSDictionary {
                             NSLog("response: \(responseDictionary)")
-                            self.movies = responseDictionary["results"] as! [NSDictionary]
+                            self.movies = responseDictionary["results"] as? [NSDictionary]
                             self.tableView.reloadData()
                     }
                 }
+                
+                if error != nil {
+                    self.NetReeor.hidden = false
+                    self.tableView.hidden = true
+                }
+                
         });
         task.resume()
         
@@ -69,10 +80,14 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         let movie = movies![indexPath.row]
         let title = movie["title"] as! String
-        let overview = movie["overview"] as! String
+            overview = movie["overview"] as! String
+            YEAR = movie["release_date"] as! String
+            //TIME = movie["overview"] as! String
+            VOTE = movie["vote_count"] as! Int
+            RATE = movie["vote_average"] as! Double
         let baseUrl = "http://image.tmdb.org/t/p/w500"
-        let posterPath = movie["poster_path"] as! String
-        let imageUrl = NSURL(string: baseUrl + posterPath)
+            posterPath = movie["poster_path"] as! String
+        let imageUrl = NSURL(string: baseUrl + posterPath!)
         cell.titleLabel.text = title
         cell.overviewLabel.text = overview
         cell.posterView.setImageWithURL(imageUrl!)
@@ -81,6 +96,52 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         return cell
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        /*
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPathForCell(cell)
+        let movie = movies![indexPath!.row]
+        if segue.identifier == "infromation" {
+        let MovieDisplayTableController = segue.destinationViewController as! MovieDisplayTableController
+        MovieDisplayTableController.movie = movie
+        
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor.whiteColor()
+        cell.selectedBackgroundView = backgroundView
+        
+        tabBarController!.tabBar.hidden = true
+        resetCollectionViewScrollToTop()
+        resetSearchBar(self.searchBar)
+        resetMovieData()
+            
+        }
+        */
+            print("hahaha!!!!!!@23")
+        if segue.identifier != "colle" {
+            let cell = sender as! UITableViewCell
+            let indexPaths = self.tableView!.indexPathForCell(cell)
+            let movie = movies![indexPaths!.row]
+            let vc = segue.destinationViewController as!MovieDisplayTableController
+            vc.movies = movie
+            title = movie["title"] as! String
+            vc.titletext = title
+            vc.YouTubeId = movie["id"] as! Int
+            print("THE TITLE IS: " + title!)
+            let baseUrl = "http://image.tmdb.org/t/p/w500"
+            posterPath = movie["poster_path"] as! String
+            vc.postPath = self.posterPath
+            overview = movie["overview"] as! String
+            vc.collectiontext = overview
+            YEAR = movie["release_date"] as! String
+            vc.year = YEAR
+            let rate1 = movie["vote_average"] as! Float64
+            vc.rate = rate1
+        }
+        
+        
+    }
+
+    
     /*
     // MARK: - Navigation
 
