@@ -2,8 +2,8 @@
 //  MovieDisplayTableController.swift
 //  MovieViewer
 //
-//  Created by Mac User on 16/1/24.
-//  Copyright © 2016年 Malik Browne. All rights reserved.
+//  Created by wentai,cui on 16/1/24.
+//  Copyright © 2016年 wentai,cui. All rights reserved.
 //
 
 import UIKit
