@@ -30,7 +30,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![](https://github.com/BoilerMaker2015/project1-cs490Flicks/Flicks.gif)
+![](https://github.com/BoilerMaker2015/project1-cs490Flicks/raw/Flicks.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
