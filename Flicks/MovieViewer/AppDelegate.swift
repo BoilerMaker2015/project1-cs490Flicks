@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Flicks    123
+//  MovieViewer
 //
-//  Created by wentai,cui on 16/1/18.
-//  Copyright © 2016年 wentai. All rights reserved.
+//  Created by wentai,cui on 1/10/16.
+//  Copyright © 2016 wentai,cui. All rights reserved.
 //
 
 import UIKit
