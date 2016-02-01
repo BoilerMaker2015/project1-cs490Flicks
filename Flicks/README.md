@@ -53,3 +53,54 @@ Describe any challenges encountered while building the app.
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+    
+    
+    Flicks----week2
+
+Time spent: **3.5** hours spent in total
+
+## User Stories
+
+The following **required** functionality is completed:
+
+- [x] User can view movie details by tapping on a cell.
+- [x] User can select from a tab bar for either **Now Playing** or **Top Rated** movies.
+- [x] Customize the selection effect of the cell.
+
+The following **optional** features are implemented:
+
+- [x] For the large poster, load the low resolution image first and then switch to the high resolution image when complete.
+- [x] Customize the navigation bar.
+
+The following **additional** features are implemented:
+
+- [x] Ratings shows in different background color
+- [x] User can see the movie trailer, if available use Youtube player Pod
+- [x] Use a single view to display movie information like release year
+
+Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
+
+1. I want to implement like search tickets and movie theatres based on users location
+2. Users can add comments under movies 
+
+## Video Walkthrough 
+
+Here's a walkthrough of implemented user stories:
+
+![](https://github.com/BoilerMaker2015/project1-cs490Flicks/raw/master/Flicks2.gif)
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
