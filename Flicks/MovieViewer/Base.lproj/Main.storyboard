@@ -96,12 +96,15 @@
                                 <animations/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="top_rated-50"/>
+                                <connections>
+                                    <segue destination="MeI-KQ-kvz" kind="modal" id="wUA-bn-O8L"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gii-1a-rLz" userLabel="Button2">
                                 <rect key="frame" x="128" y="521" width="64" height="54.5"/>
                                 <animations/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="" image="now_playing-50_2x"/>
+                                <state key="normal" image="now_playing-50_2x"/>
                             </button>
                         </subviews>
                         <animations/>
@@ -116,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-653" y="-75"/>
+            <point key="canvasLocation" x="-668" y="-91"/>
         </scene>
         <!--Movies Collection View Controller-->
         <scene sceneID="UNX-l9-iox">
@@ -225,7 +228,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lur-gL-bOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-555" y="869"/>
+            <point key="canvasLocation" x="-1328" y="223"/>
         </scene>
         <!--MovieDisplayTable-->
         <scene sceneID="74D-Qk-fvg">
@@ -336,7 +339,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wzl-rk-vJS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-93" y="-236"/>
+            <point key="canvasLocation" x="-29" y="184"/>
         </scene>
         <!--Movies View Controller-->
         <scene sceneID="peC-Eg-9jd">
@@ -441,7 +444,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PHh-uU-WoI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="211" y="1208"/>
+            <point key="canvasLocation" x="-118" y="1067"/>
         </scene>
         <!--MovieDisplayTable-->
         <scene sceneID="4Kk-wQ-hkH">
@@ -587,7 +590,113 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mtl-pm-qs1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="244" y="675"/>
+            <point key="canvasLocation" x="274" y="1020"/>
+        </scene>
+        <!--The Second Collection View Controller-->
+        <scene sceneID="F5z-RZ-C6v">
+            <objects>
+                <viewController id="MeI-KQ-kvz" customClass="TheSecondCollectionViewController" customModule="MovieViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Mf-5F-bzM"/>
+                        <viewControllerLayoutGuide type="bottom" id="qqs-MT-chC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dii-ow-lSY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Qk0-8C-jzM">
+                                <rect key="frame" x="0.0" y="47" width="320" height="475"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="Xi0-hL-0Zq">
+                                    <size key="itemSize" width="147" height="221"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="4" maxX="7" maxY="4"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieCollectionCell" id="Sab-Jt-8FH" userLabel="MovieCollectionCell" customClass="MovieCollectionViewCell" customModule="MovieViewer" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="4" width="147" height="221"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="147" height="221"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fff-qn-8we">
+                                                    <rect key="frame" x="-20" y="0.0" width="174" height="197"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iv1-bg-1sv">
+                                                            <rect key="frame" x="0.0" y="0.0" width="168" height="197"/>
+                                                            <animations/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <animations/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQC-4f-aOf" userLabel="rate">
+                                                    <rect key="frame" x="98" y="200" width="42" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="11"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ctitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehF-mU-wuM">
+                                                    <rect key="frame" x="8" y="203" width="74" height="23"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="CollectionImage" destination="iv1-bg-1sv" id="Jh7-Wn-LVa"/>
+                                            <outlet property="Collectiontitle" destination="ehF-mU-wuM" id="jdk-Pe-Wno"/>
+                                            <outlet property="rate" destination="HQC-4f-aOf" id="n8n-FH-EgV"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQN-5a-Zhm">
+                                <rect key="frame" x="14" y="521" width="34" height="39"/>
+                                <animations/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="film_placeholder"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azn-Kx-fjR">
+                                <rect key="frame" x="244" y="513" width="50" height="55"/>
+                                <animations/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="top_rated-50"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vC6-UY-5Uw" userLabel="Button2">
+                                <rect key="frame" x="122" y="513.5" width="64" height="54.5"/>
+                                <animations/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="" image="now_playing-50_2x"/>
+                            </button>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xq2-An-C4P">
+                                <rect key="frame" x="0.0" y="8" width="320" height="44"/>
+                                <animations/>
+                                <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="CollectionView" destination="Qk0-8C-jzM" id="IC9-To-58D"/>
+                        <outlet property="searchBar" destination="Xq2-An-C4P" id="HK4-ky-0p5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="614-62-41k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-659" y="622"/>
         </scene>
     </scenes>
     <resources>
@@ -597,6 +706,6 @@
         <image name="top_rated-50" width="33" height="33"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5aZ-I0-Ium"/>
+        <segue reference="sCy-UC-E5G"/>
     </inferredMetricsTieBreakers>
 </document>
